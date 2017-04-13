@@ -5,5 +5,5 @@ frontend:
     - "443:443"
   volumes:
     - ./conf.d:/etc/nginx/conf.d
-    - ./logs/nginx:/var/log/nginx
+    - ./logs:/var/log/nginx
     - ./placeholder:/usr/share/nginx/html
