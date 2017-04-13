@@ -73,9 +73,12 @@ example.com.conf.disabled # Деактивирован
 После отключения домена все запросы будут уходить на "заглушку" (placeholder)
 и не будут обработаны backend'ом.
 
-## Placeholder
+## Заглушка (Placeholder)
 
-Placeholder HTML-page: /placeholder/index.html
+Шаблон страницы заглушки: /placeholder/index.html
+
+Заглушка используется для всех доменов, которые направлены на сервер, но для них
+еще нет конфигурации.
 
 ## SSL для доменов
 
