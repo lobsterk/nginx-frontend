@@ -1,0 +1,9 @@
+frontend:
+  image: nginx
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - ./conf.d:/etc/nginx/conf.d
+    - ./logs/nginx:/var/log/nginx
+    - ./placeholder:/usr/share/nginx/html
