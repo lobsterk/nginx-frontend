@@ -1,5 +1,8 @@
 # Nginx frontend-server for Docker-based applications
 
+Текущая конфигурация может пригодится тем, кому нужно запускать за frontend (edge)
+сервером несколько приложений внутри docker-контейнеров каждый со своим веб-сервером.
+
 ## Default host configuration
 
 ```
@@ -51,6 +54,16 @@ server {
     #    deny  all;
     #}
 }
+```
+
+## Включение/отключение доменов
+
+Чтобы выключить домен, достаточно добавить к имени конфигурации `.disabled`.
+Например:
+
+```
+example.com.conf          # Активирован
+example.com.conf.disabled # Деактивирован
 ```
 
 ## Placeholder
