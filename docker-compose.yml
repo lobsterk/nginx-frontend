@@ -6,4 +6,5 @@ frontend:
   volumes:
     - ./conf.d:/etc/nginx/conf.d
     - ./logs:/var/log/nginx
+    - ./ssl/letsencrypt:/etc/letsencrypt
     - ./placeholder:/usr/share/nginx/html
