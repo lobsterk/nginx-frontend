@@ -19,7 +19,7 @@ wget https://github.com/krsnv/nginx-frontend/archive/master.zip
 unzip master.zip && rm master.zip
 
 # Переходим в проект
-cd nginx-frontend
+cd nginx-frontend-master # либо nginx-frontend, если вы клонировали проект
 
 # Запускаем
 docker-compose up
