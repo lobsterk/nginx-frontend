@@ -66,6 +66,9 @@ example.com.conf          # Активирован
 example.com.conf.disabled # Деактивирован
 ```
 
+После отключения домена все запросы будут уходить на "заглушку" (placeholder)
+и не будут обработаны backend'ом.
+
 ## Placeholder
 
 Placeholder HTML-page: /placeholder/index.html
