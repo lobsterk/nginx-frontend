@@ -5,6 +5,7 @@ server {
     listen 80;
     listen 443 ssl;
 
+    set $server_ip localhost;
     set $app_port 9000;
 
     server_name example.com 
@@ -33,7 +34,7 @@ server {
         proxy_send_timeout     200;
         proxy_read_timeout     200;
         proxy_set_header       Host $host;
-        proxy_pass             http://localhost:$app_port;
+        proxy_pass             http://$server_ip:$app_port;
     }
 
     error_page 500 502 503 504 /500.html;
